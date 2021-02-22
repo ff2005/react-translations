@@ -4,7 +4,9 @@
 [![React](https://img.shields.io/badge/react-16.8.0-68D3FC?logo=react)](https://reactjs.org/)
 [![Typescript](https://img.shields.io/badge/typescript-4.1.5-007ACC?logo=typescript)](https://www.typescriptlang.org/)
 
-Simple library for react translation with hooks (and typescript).
+Simple library for react translation with hooks (and typescript if you need it).
+
+My motivation to create this library was that I wanted something very simple and light to handle translations from json files, nothing more, nothing less.
 
 ## Installation
 
@@ -88,6 +90,11 @@ fr.json
 - useAvailableLanguages - return arrays of available languages form the browser
 - useTranslationLanguage - return [language, setLanguage], language is a object with the current selected language and setLanguage is a function to change the selected language
 - useTranslation - return function to query the translation
+
+
+## Errors
+
+Check the console, if there is any missing translation you will see it ;)
 
 ## Contributing
 
