@@ -1,0 +1,75 @@
+{
+  "name": "@ff2005/react-translations",
+  "author": "FF2005",
+  "version": "0.0.2",
+  "description": "Simple translations lib for react using hooks",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "main:min": "lib/index.min.js",
+  "main:esm": "lib/index.esm.js",
+  "module": "lib/index.es.js",
+  "jsnext:main": "lib/index.es.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ff2005/react-translations.git"
+  },
+  "keywords": [
+    "react",
+    "translations",
+    "typescript",
+    "hooks"
+  ],
+  "homepage": "https://github.com/ff2005/react-translations#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@types/node": "^14.14.30",
+    "@types/react": "^17.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "husky": "^5.0.9",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1",
+    "react": "^17.0.1",
+    "rollup": "^2.39.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.1.5"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
