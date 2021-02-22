@@ -94,7 +94,7 @@ fr.json
 
 ## Errors
 
-Check the console, if there is any missing translation you will see it ;)
+Check the console, if there is any missing translation you will see it 😉
 
 ## Contributing
 
