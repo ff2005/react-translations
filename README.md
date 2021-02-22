@@ -83,6 +83,12 @@ fr.json
 - translations - Object with each json language
 - fallback - Object for the fallback language (ex: { languageTag: 'en', isRTL: false }) 
 
+## Hooks
+
+- useAvailableLanguages - return arrays of available languages form the browser
+- useTranslationLanguage - return [language, setLanguage], language is a object with the current selected language and setLanguage is a function to change the selected language
+- useTranslation - return function to query the translation
+
 ## Contributing
 
 Contributions are very welcome. Please check out the [contributing document](CONTRIBUTING.md).
